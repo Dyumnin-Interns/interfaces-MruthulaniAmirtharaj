@@ -47,6 +47,7 @@ module dut(CLK,
 	   read_en,
 	   read_data,
 	   read_rdy);
+	
   input  CLK;
   input  RST_N;
 
@@ -61,7 +62,7 @@ module dut(CLK,
   input  read_en;
   output read_data;
   output read_rdy;
-
+	
   // signals for module outputs
   reg read_data;
   wire read_rdy, write_rdy;
@@ -202,4 +203,3 @@ module dut(CLK,
   `endif // BSV_NO_INITIAL_BLOCKS
   // synopsys translate_on
 endmodule  // dut
-
